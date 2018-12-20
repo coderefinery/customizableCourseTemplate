@@ -1,0 +1,26 @@
+{
+  "title": "Course Title",
+  "episodes": {
+    "bashCommands": [
+      {
+        "title": "Episode Title",
+        "introduction": "html",
+        "steps": "html"
+      }
+    ],
+    "bashAliases": [
+      {
+        "title": "Episode Title",
+        "introduction": "html",
+        "steps": "html"
+      }
+    ],
+    "GUI": [
+      {
+        "title": "Episode Title",
+        "introduction": "html",
+        "steps": "html"
+      }
+    ]
+  }
+}
