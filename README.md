@@ -1,6 +1,7 @@
 # Customizable Course Template
 
 > A flexible viewer for codeRefinery course contents
+https://coderefinery.github.io/customizableCourseTemplate/
 
 ## Environment
 
