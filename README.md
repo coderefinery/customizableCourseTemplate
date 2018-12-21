@@ -1,4 +1,4 @@
-# Customizable Course Template
+# Customizable Course Template (under development)
 
 > A flexible viewer for codeRefinery course contents
 https://coderefinery.github.io/customizableCourseTemplate/
