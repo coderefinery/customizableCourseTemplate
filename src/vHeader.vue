@@ -1,7 +1,7 @@
 <template>
 	<div class="header">
 		<span class="h1">
-			GitHub Desktop for Humanities
+			vHeader
 		</span>
 	</div>
 </template>

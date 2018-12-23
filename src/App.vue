@@ -33,11 +33,10 @@
                   ...
             --><el-main>Main
 						<div class="lessons">
-							{{lessons}}
-							<v-lesson>
+              <v-lesson
 								v-for="(item, index) in lessons"
 								:key="index"
-								:lesson="item"
+								:lesson="item">
 							</v-lesson>
 						</div>
 						<img src="./assets/logo.png">
@@ -56,7 +55,7 @@
 	import vHeader from './vHeader'
 	import vLesson from './vLesson'
 	export default {
-		data() {
+    data: function() {
 			return {
 				lessons: [
 					{
