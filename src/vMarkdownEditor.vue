@@ -8,7 +8,10 @@
       language="markdown"
       :content="markdown"
     ></v-code>
-    <v-markdown class="html-preview">{{ markdown }}</v-markdown>
+    <v-markdown
+      class="html-preview"
+      :emoji="false"
+    >{{ markdown }}</v-markdown>
   </div>
 </template>
 <script>
