@@ -7,15 +7,11 @@
 			<el-container>
 				<el-aside width="200px">Aside</el-aside>
 				<el-container>
-          <el-main>
-            <!-- todo: courses component with alternative abstraction levels -->
-						<div class="lessons">
-              <v-lesson
-								v-for="(lesson, index) in course.lessons"
-								:key="index"
-								:lesson="lesson">
-							</v-lesson>
-						</div>
+          <el-main :style="{'background-color': '#' + pageColor}">
+            <!-- todo: list courses component with alternative abstraction levels -->
+            <v-course
+              :course="course"
+            />
 						<!--div>
 							<el-button @click="notify">Notify Me!</el-button>
 						</div-->
@@ -32,7 +28,8 @@
 <script>
 	import vHeader from './vHeader'
 	import vFooter from './vFooter'
-	import vLesson from './vLesson'
+	import vCourse from './vCourse'
+
 	export default {
 	  computed: {
 	    course () {
@@ -56,7 +53,7 @@
 		components: {
 			vHeader: vHeader,
 			vFooter: vFooter,
-			vLesson: vLesson
+      vCourse
 		}
 	}
 </script>
