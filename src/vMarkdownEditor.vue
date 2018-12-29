@@ -14,7 +14,7 @@
   // https://github.com/coderefinery/customizableCourseTemplate/issues/21
 
   export default {
-    name: "MarkdownEditor",
+    name: "vMarkdownEditor",
     props: {
       markdown: String,
       readOnly: {

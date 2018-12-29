@@ -31,7 +31,7 @@
   import vMarkdownEditor from './vMarkdownEditor';
 
   export default {
-    name: "Episode",
+    name: "vEpisode",
     props: {
       episode: Object,
       readOnly: {

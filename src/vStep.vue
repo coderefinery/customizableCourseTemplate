@@ -25,7 +25,7 @@
   import vMarkdownEditor from './vMarkdownEditor';
 
   export default {
-    name: "Step",
+    name: "vStep",
     props: {
       step: Object,
       readOnly: {
