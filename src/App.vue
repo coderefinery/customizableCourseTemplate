@@ -5,7 +5,11 @@
 				<v-header :title="course.title"></v-header>
 			</el-header>
 			<el-container>
-				<el-aside width="200px">Aside</el-aside>
+				<el-aside width="20%">
+          <v-aside
+            :course="course"
+          />
+        </el-aside>
 				<el-container>
           <el-main :style="{'background-color': '#' + pageColor}">
             <!-- todo: list courses component with alternative abstraction levels -->
@@ -27,6 +31,7 @@
 
 <script>
 	import vHeader from './vHeader'
+	import vAside from './vAside'
 	import vFooter from './vFooter'
 	import vCourse from './vCourse'
 
@@ -51,8 +56,9 @@
 			}
 		},
 		components: {
-			vHeader: vHeader,
 			vFooter: vFooter,
+			vHeader,
+			vAside,
       vCourse
 		}
 	}
