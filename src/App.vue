@@ -20,7 +20,9 @@
 							<el-button @click="notify">Notify Me!</el-button>
 						</div-->
 					</el-main>
-					<el-footer>Footer</el-footer>
+					<el-footer>
+            <v-footer></v-footer>
+          </el-footer>
 				</el-container>
 			</el-container>
 		</el-container>
@@ -29,6 +31,7 @@
 
 <script>
 	import vHeader from './vHeader'
+	import vFooter from './vFooter'
 	import vLesson from './vLesson'
 	export default {
     data: function () {
@@ -90,6 +93,7 @@
 		},
 		components: {
 			vHeader: vHeader,
+			vFooter: vFooter,
 			vLesson: vLesson
 		},
     mounted: {
