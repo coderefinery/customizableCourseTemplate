@@ -1,12 +1,11 @@
 const resolve = require('path').resolve
-const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const url = require('url')
 const publicPath = ''
 
 module.exports = (options = {}) => ({
   entry: {
-    vendor: './src/vendor',
     index: './src/main.js'
   },
   output: {
@@ -40,20 +39,33 @@ module.exports = (options = {}) => ({
       }
     ]
   },
-  plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'manifest']
-    }),
-    new HtmlWebpackPlugin({
-      template: 'src/index.html'
-    })
-  ],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          test: /manifest/,
+          priority: -10
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true
+        }
+      }
+    }
+  },
   resolve: {
     alias: {
       '~': resolve(__dirname, 'src')
     },
     extensions: ['.js', '.vue', '.json', '.css']
   },
+  plugins: [
+    new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'src/index.html'
+    })
+  ],
   devServer: {
     host: '127.0.0.1',
     port: 8010,

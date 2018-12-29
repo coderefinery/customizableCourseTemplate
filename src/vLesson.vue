@@ -25,8 +25,8 @@
 </template>
 
 <script>
-  import vMarkdownEditor from './vMarkdownEditor';
-  import vEpisode from './vEpisode';
+  import vMarkdownEditor from './vMarkdownEditor'
+  import vEpisode from './vEpisode'
 
   export default {
 		name: "vLesson",
