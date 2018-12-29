@@ -1,6 +1,6 @@
 # Customizable Course Template (under development)
 
-> A flexible viewer for codeRefinery course contents
+A flexible viewer for codeRefinery course contents
 https://coderefinery.github.io/customizableCourseTemplate/
 The aim of this repository is to provide a flexible template the for code refinery courses with various abstractions represented by five viewing modes each addressing different learning modalities:
 
