@@ -34,51 +34,13 @@
 	import vFooter from './vFooter'
 	import vLesson from './vLesson'
 	export default {
-    data: function () {
-      return {
-        course: {
-          "title": "Course Title",
-          "lessons": [
-            {
-              "title": "Lesson Title",
-              "abstract": "Lesson abstract markdown",
-              "description": "Lesson description markdown",
-              "episodes": [
-                {
-                  "title": "Episode Title",
-                  "abstract": "Episode abstract markdown",
-                  "description": "Episode description markdown",
-                  "concepts": [
-                    {
-                      "title": "Concept Title",
-                      "abstract": "Concept abstract markdown",
-                      "description": "Concept description markdown"
-                    }
-                  ],
-                  "steps": [
-                    {
-                      "title": "Step Title",
-                      "abstract": "Step *abstract* markdown",
-                      "description": "Step description markdown"
-                    }
-                  ],
-                  "exercises": [
-                    {
-                      "title": "Exercise Title",
-                      "description": "Exercise description markdown"
-                    }
-                  ],
-                  "feedback": [
-                    {
-                      "author": "User Name",
-                      "content": "Feedback markdown"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
+	  computed: {
+	    course () {
+	      return this.$store.state.course
+      },
+      pageColor () {
+	      console.log(this.$store.state.pageColor)
+	      return this.$store.state.pageColor
       }
     },
     methods: {
