@@ -2,44 +2,20 @@
 	<div id="app">
 		<el-container>
 			<el-header>
-				<v-header></v-header>
+				<v-header :title="course.title"></v-header>
 			</el-header>
 			<el-container>
 				<el-aside width="200px">Aside</el-aside>
 				<el-container>
-          <!--
-              customization
-                gitAbstraction
-                workEnvironment
-                page format
-                episodeAppendix
-              lesson
-                episode
-                  gitCommands
-                    newConcepts
-                    example
-                    exercises
-                    quizz
-                  bashAliases
-                    newConcepts
-                    example
-                    exercises
-                    quizz
-                  GitHubDesktop
-                    newConcepts
-                    example
-                    exercises
-                    quizz
-                  ...
-            --><el-main>Main
+          <el-main>
+            <!-- todo: courses component -->
 						<div class="lessons">
               <v-lesson
-								v-for="(item, index) in lessons"
+								v-for="(lesson, index) in course.lessons"
 								:key="index"
-								:lesson="item">
+								:lesson="lesson">
 							</v-lesson>
 						</div>
-						<img src="./assets/logo.png">
 						<!--div>
 							<el-button @click="notify">Notify Me!</el-button>
 						</div-->
@@ -55,18 +31,54 @@
 	import vHeader from './vHeader'
 	import vLesson from './vLesson'
 	export default {
-    data: function() {
-			return {
-				lessons: [
-					{
-						title: 'Install GitHub Desktop',
-						brief: 'download the app from <a href="https://desktop.github.com/" _target="blank">here</a>',
-						episodes: []
-					}
-				]
-			}
-		},
-		methods: {
+    data: function () {
+      return {
+        course: {
+          "title": "Course Title",
+          "lessons": [
+            {
+              "title": "Lesson Title",
+              "abstract": "Lesson abstract markdown",
+              "description": "Lesson description markdown",
+              "episodes": [
+                {
+                  "title": "Episode Title",
+                  "abstract": "Episode abstract markdown",
+                  "description": "Episode description markdown",
+                  "concepts": [
+                    {
+                      "title": "Concept Title",
+                      "abstract": "Concept abstract markdown",
+                      "description": "Concept description markdown"
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "title": "Step Title",
+                      "abstract": "Step abstract markdown",
+                      "description": "Step description markdown"
+                    }
+                  ],
+                  "exercises": [
+                    {
+                      "title": "Exercise Title",
+                      "description": "Exercise description markdown"
+                    }
+                  ],
+                  "feedback": [
+                    {
+                      "author": "User Name",
+                      "content": "Feedback markdown"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    methods: {
       notify() {
 				this.$notify({
 					title: 'Title',
@@ -79,15 +91,17 @@
 		components: {
 			vHeader: vHeader,
 			vLesson: vLesson
-		}
+		},
+    mounted: {
+
+    }
 	}
 </script>
 
 <style>
 	#app {
 		font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-		text-align: center;
-	}
+  }
 
 	.h1 {
 		font-size: 20px
@@ -141,13 +155,14 @@
 	.el-main {
 		background-color: #E9EEF3;
 		color: #333;
-		text-align: center;
-		line-height: 160px;
+		text-align: left;
+		/*line-height: 16px;*/
 	}
 
 	body > .el-container {
 		margin-bottom: 40px;
-	}
+    -webkit-font-smoothing: antialiased;
+  }
 
 	.el-container:nth-child(5) .el-aside,
 	.el-container:nth-child(6) .el-aside {
@@ -157,4 +172,5 @@
 	.el-container:nth-child(7) .el-aside {
 		line-height: 320px;
 	}
+
 </style>
