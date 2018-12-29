@@ -23,6 +23,8 @@
 
 <script>
   import vStep from './vStep';
+  import vQuiz from './vQuiz';
+  import vExercise from './vExercise';
   import vMarkdownEditor from './vMarkdownEditor';
 
   export default {
@@ -35,8 +37,10 @@
       }
     },
     components: {
-      vMarkdownEditor: vMarkdownEditor,
-      vStep: vStep
+      vMarkdownEditor,
+      vStep,
+      vQuiz,
+      vExercise
     }
   }
 </script>
