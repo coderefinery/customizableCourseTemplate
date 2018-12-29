@@ -58,7 +58,7 @@
                   "steps": [
                     {
                       "title": "Step Title",
-                      "abstract": "Step abstract markdown",
+                      "abstract": "Step *abstract* markdown",
                       "description": "Step description markdown"
                     }
                   ],

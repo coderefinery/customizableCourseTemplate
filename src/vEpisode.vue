@@ -5,19 +5,14 @@
         {{ episode.title }}
       </h3>
       <p class="episode-abstract">
-        {{ episode.abstract }}
+        <v-markdown-editor
+          :markdown="episode.abstract"
+        />
       </p>
     </div>
     <v-markdown-editor
       :markdown="episode.description"
-      :readOnly="true"
-    >
-    </v-markdown-editor>
-    <v-markdown-editor
-      :markdown="episode.abstract"
-      :readOnly="true"
-    >
-    </v-markdown-editor>
+    />
     <v-step
       v-for="(step, index) in episode.steps"
       :key="index"

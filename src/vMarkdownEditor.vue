@@ -1,18 +1,23 @@
 <template>
-  <div class="markdown-editor">
+  <div
+    class="markdown-editor"
+    @click="highlight"
+  >
     <v-code
       v-if="readOnly === false"
+      language="markdown"
       :content="markdown"
     ></v-code>
-    <div class="html-preview"></div>
+    <v-markdown class="html-preview">{{ markdown }}</v-markdown>
   </div>
 </template>
-
 <script>
   import vCode from './vCode';
+  import vueMarkdown from 'vue-markdown';
 
-  // https://github.com/coderefinery/customizableCourseTemplate/issues/21
-
+  function resetBackgroundColor (el) {
+    el.style.backgroundColor = 'transparent';
+  }
   export default {
     name: "vMarkdownEditor",
     props: {
@@ -22,11 +27,26 @@
         default: false
       }
     },
+    methods: {
+      highlight: function (event) {
+        let editors = document.querySelectorAll('.markdown-editor');
+        editors.forEach(el => resetBackgroundColor(el));
+
+        event.target.closest('.markdown-editor').style.backgroundColor = '#fffb9d';
+      }
+    },
     components: {
-      vCode: vCode
+      vCode: vCode,
+      vMarkdown: vueMarkdown
     }
   }
 </script>
+
 <style scoped>
-  /* todo: flexible columns layout (conditional editor visibility) */
+  .markdown-editor {
+    padding:  4px;
+    margin: 1em 0;
+    display: grid;
+  }
+
 </style>

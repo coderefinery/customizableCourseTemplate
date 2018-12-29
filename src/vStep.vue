@@ -1,23 +1,16 @@
 <template>
   <div class="step">
     <div class="step-header">
-      <h4 class="step-title">
+      <p class="step-title">
         {{ step.title }}
-      </h4>
-      <p class="step-abstract">
-        {{ step.abstract }}
       </p>
+      <v-markdown-editor
+        :markdown="step.abstract"
+      />
     </div>
     <v-markdown-editor
       :markdown="step.description"
-      :readOnly="true"
-    >
-    </v-markdown-editor>
-    <v-markdown-editor
-      :markdown="step.abstract"
-      :readOnly="true"
-    >
-    </v-markdown-editor>
+    />
   </div>
 </template>
 
@@ -39,4 +32,13 @@
   }
 </script>
 <style scoped>
+  .step {
+    background-color: white;
+    border: 1px #e6e6e6 solid;
+    border-radius: 4px;
+    padding: 0.3em 1em;
+  }
+  .step-title {
+    font-weight: 500;
+  }
 </style>

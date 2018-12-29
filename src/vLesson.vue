@@ -5,21 +5,16 @@
         Code Refinery - {{ lesson.title }}
       </h2>
       <p class="lesson-abstract">
-        {{ lesson.abstract }}
+        <v-markdown-editor
+          :markdown="lesson.abstract"
+        />
       </p>
     </div>
     <!-- todo: data store variable for global layout abstraction setting -->
     <div class="lesson-content">
       <v-markdown-editor
         :markdown="lesson.description"
-        :readOnly="true"
-      >
-      </v-markdown-editor>
-      <v-markdown-editor
-        :markdown="lesson.abstract"
-        :readOnly="true"
-      >
-      </v-markdown-editor>
+      />
       <v-episode
         v-for="(episode, index) in lesson.episodes"
         :key="index"
