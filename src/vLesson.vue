@@ -48,14 +48,10 @@
 	.lesson {
 		width: 100%;
     text-align: left;
-
 	}
   .header-anchor {
     display: none;
   }
- .fixed {
-	 position: fixed;
- }
 
   .lesson__scroll {
     height: calc(100% - 80px);

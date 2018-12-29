@@ -8,7 +8,7 @@
 				<el-aside width="200px">Aside</el-aside>
 				<el-container>
           <el-main>
-            <!-- todo: courses component -->
+            <!-- todo: courses component with alternative abstraction levels -->
 						<div class="lessons">
               <v-lesson
 								v-for="(lesson, index) in course.lessons"
@@ -95,10 +95,7 @@
 			vHeader: vHeader,
 			vFooter: vFooter,
 			vLesson: vLesson
-		},
-    mounted: {
-
-    }
+		}
 	}
 </script>
 
@@ -152,7 +149,7 @@
     background-color: #B3C0D1;
   }
 
-	.el-aside {
+  .el-aside {
 		background-color: #D3DCE6;
 		color: #333;
 		text-align: center;
