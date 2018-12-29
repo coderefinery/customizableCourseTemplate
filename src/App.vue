@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<el-container>
-			<el-header>
+			<el-header height="auto">
 				<v-header :title="course.title"></v-header>
 			</el-header>
 			<el-container>
@@ -138,12 +138,15 @@
 		margin-bottom: 0;
 	}
 
-	.el-header, .el-footer {
-		background-color: #B3C0D1;
-		color: #333;
-		text-align: center;
-		line-height: 60px;
-	}
+  .el-header, .el-footer {
+    background-color: #fafafa;
+    color: #333;
+    text-align: center;
+  }
+
+  .el-footer {
+    background-color: #B3C0D1;
+  }
 
 	.el-aside {
 		background-color: #D3DCE6;

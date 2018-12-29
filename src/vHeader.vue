@@ -1,15 +1,15 @@
 <template>
 	<div class="header">
-    <div class="frame">
-      <img src="./assets/logo.png">
-    </div>
-    <span class="h1">
-			{{ title }}
-		</span>
+    <v-logo></v-logo>
+    <h1 class="title">
+			CodeRefinery.org - {{ title }}
+		</h1>
 	</div>
 </template>
 
 <script>
+  import vLogo from './vLogo';
+
 	export default {
 		name: "vHeader",
     props: {
@@ -17,21 +17,20 @@
         type: String,
         default: 'Course Title'
       }
+    },
+    components: {
+		  vLogo: vLogo
     }
 	}
 </script>
 
 <style scoped>
   .header {
-    height: 100%;
+    height: 80px;
     display: flex;
     align-items: center;
   }
-  .frame {
-    height: 100%;
-    padding: 5px 1.5em 5px 0;
-  }
-  .frame>* {
-    height: 100%;
+  .title {
+    margin-left: 1.5em;
   }
 </style>
