@@ -31,6 +31,7 @@
     align-items: center;
   }
   .title {
-    margin-left: 1.5em;
+    width: 100%;
+    text-align: center;
   }
 </style>
