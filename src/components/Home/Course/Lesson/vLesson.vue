@@ -25,8 +25,7 @@
 </template>
 
 <script>
-  import vMarkdownEditor from './vMarkdownEditor'
-  import vEpisode from './vEpisode'
+  import vEpisode from './Episode'
 
   export default {
 		name: "vLesson",
@@ -34,7 +33,6 @@
 			'lesson'
 		],
     components: {
-      vMarkdownEditor: vMarkdownEditor,
       vEpisode: vEpisode
     }
 	}

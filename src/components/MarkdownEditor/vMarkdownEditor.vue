@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-  import vCode from './vCode';
+  import vCode from '../Code';
   import vueMarkdown from 'vue-markdown';
 
   function resetBackgroundColor (el) {

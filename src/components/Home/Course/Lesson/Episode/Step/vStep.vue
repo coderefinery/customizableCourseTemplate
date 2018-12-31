@@ -1,44 +1,41 @@
 <template>
-  <div class="quiz">
-    <div class="quiz-header">
-      <p class="quiz-title">
-        {{ quiz.title }}
+  <div class="step">
+    <div class="step-header">
+      <p class="step-title">
+        {{ step.title }}
       </p>
       <v-markdown-editor
-        :markdown="quiz.abstract"
+        :markdown="step.abstract"
       />
     </div>
     <v-markdown-editor
-      :markdown="quiz.description"
+      :markdown="step.description"
     />
   </div>
 </template>
 
 <script>
-  import vMarkdownEditor from './vMarkdownEditor';
 
   export default {
-    name: "vQuiz",
+    name: "vStep",
     props: {
-      quiz: Object,
+      step: Object,
       readOnly: {
         type: Boolean,
         default: false
       }
-    },
-    components: {
-      vMarkdownEditor: vMarkdownEditor
     }
   }
 </script>
 <style scoped>
-  .quiz {
+  .step {
     background-color: white;
     border: 1px #e6e6e6 solid;
     border-radius: 4px;
     padding: 0.3em 1em;
+    box-shadow: 2px 2px 4px grey;
   }
-  .quiz-title {
-    font-style: italic;
+  .step-title {
+    font-weight: 500;
   }
 </style>

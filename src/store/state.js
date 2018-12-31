@@ -12,34 +12,684 @@ const state = {
     background: '#86939d'
   },
   course: {
-    "title": "Course Title",
+    "title": "Course 1 Title",
     "lessons": [
       {
-        "title": "Lesson Title",
+        "title": "Lesson 1 Title",
         "abstract": "Lesson abstract markdown",
         "description": "Lesson description markdown",
         "episodes": [
           {
-            "title": "Episode Title",
+            "title": "Episode 1 Title",
             "abstract": "Episode abstract markdown",
             "description": "Episode description markdown",
             "concepts": [
               {
-                "title": "Concept Title",
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
                 "abstract": "Concept abstract markdown",
                 "description": "Concept description markdown"
               }
             ],
             "steps": [
               {
-                "title": "Step Title",
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
                 "abstract": "Step *abstract* markdown",
                 "description": "Step description markdown"
               }
             ],
             "exercises": [
               {
-                "title": "Exercise Title",
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
+                "description": "Exercise description markdown"
+              }
+            ],
+            "feedback": [
+              {
+                "author": "User Name",
+                "content": "Feedback markdown"
+              }
+            ]
+          },
+          {
+            "title": "Episode 2 Title",
+            "abstract": "Episode abstract markdown",
+            "description": "Episode description markdown",
+            "concepts": [
+              {
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              }
+            ],
+            "steps": [
+              {
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              }
+            ],
+            "exercises": [
+              {
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
+                "description": "Exercise description markdown"
+              }
+            ],
+            "feedback": [
+              {
+                "author": "User Name",
+                "content": "Feedback markdown"
+              }
+            ]
+          },
+          {
+            "title": "Episode 3 Title",
+            "abstract": "Episode abstract markdown",
+            "description": "Episode description markdown",
+            "concepts": [
+              {
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              }
+            ],
+            "steps": [
+              {
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              }
+            ],
+            "exercises": [
+              {
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
+                "description": "Exercise description markdown"
+              }
+            ],
+            "feedback": [
+              {
+                "author": "User Name",
+                "content": "Feedback markdown"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Lesson 2 Title",
+        "abstract": "Lesson abstract markdown",
+        "description": "Lesson description markdown",
+        "episodes": [
+          {
+            "title": "Episode 1 Title",
+            "abstract": "Episode abstract markdown",
+            "description": "Episode description markdown",
+            "concepts": [
+              {
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              }
+            ],
+            "steps": [
+              {
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              }
+            ],
+            "exercises": [
+              {
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
+                "description": "Exercise description markdown"
+              }
+            ],
+            "feedback": [
+              {
+                "author": "User Name",
+                "content": "Feedback markdown"
+              }
+            ]
+          },
+          {
+            "title": "Episode 2 Title",
+            "abstract": "Episode abstract markdown",
+            "description": "Episode description markdown",
+            "concepts": [
+              {
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              }
+            ],
+            "steps": [
+              {
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              }
+            ],
+            "exercises": [
+              {
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
+                "description": "Exercise description markdown"
+              }
+            ],
+            "feedback": [
+              {
+                "author": "User Name",
+                "content": "Feedback markdown"
+              }
+            ]
+          },
+          {
+            "title": "Episode 3 Title",
+            "abstract": "Episode abstract markdown",
+            "description": "Episode description markdown",
+            "concepts": [
+              {
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              }
+            ],
+            "steps": [
+              {
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              }
+            ],
+            "exercises": [
+              {
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
+                "description": "Exercise description markdown"
+              }
+            ],
+            "feedback": [
+              {
+                "author": "User Name",
+                "content": "Feedback markdown"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Lesson 3 Title",
+        "abstract": "Lesson abstract markdown",
+        "description": "Lesson description markdown",
+        "episodes": [
+          {
+            "title": "Episode 1 Title",
+            "abstract": "Episode abstract markdown",
+            "description": "Episode description markdown",
+            "concepts": [
+              {
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              }
+            ],
+            "steps": [
+              {
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              }
+            ],
+            "exercises": [
+              {
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
+                "description": "Exercise description markdown"
+              }
+            ],
+            "feedback": [
+              {
+                "author": "User Name",
+                "content": "Feedback markdown"
+              }
+            ]
+          },
+          {
+            "title": "Episode 2 Title",
+            "abstract": "Episode abstract markdown",
+            "description": "Episode description markdown",
+            "concepts": [
+              {
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              }
+            ],
+            "steps": [
+              {
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              }
+            ],
+            "exercises": [
+              {
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
+                "description": "Exercise description markdown"
+              }
+            ],
+            "feedback": [
+              {
+                "author": "User Name",
+                "content": "Feedback markdown"
+              }
+            ]
+          },
+          {
+            "title": "Episode 3 Title",
+            "abstract": "Episode abstract markdown",
+            "description": "Episode description markdown",
+            "concepts": [
+              {
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              }
+            ],
+            "steps": [
+              {
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              }
+            ],
+            "exercises": [
+              {
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
+                "description": "Exercise description markdown"
+              }
+            ],
+            "feedback": [
+              {
+                "author": "User Name",
+                "content": "Feedback markdown"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Lesson 4 Title",
+        "abstract": "Lesson abstract markdown",
+        "description": "Lesson description markdown",
+        "episodes": [
+          {
+            "title": "Episode 1 Title",
+            "abstract": "Episode abstract markdown",
+            "description": "Episode description markdown",
+            "concepts": [
+              {
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              }
+            ],
+            "steps": [
+              {
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              }
+            ],
+            "exercises": [
+              {
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
+                "description": "Exercise description markdown"
+              }
+            ],
+            "feedback": [
+              {
+                "author": "User Name",
+                "content": "Feedback markdown"
+              }
+            ]
+          },
+          {
+            "title": "Episode 2 Title",
+            "abstract": "Episode abstract markdown",
+            "description": "Episode description markdown",
+            "concepts": [
+              {
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              }
+            ],
+            "steps": [
+              {
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              }
+            ],
+            "exercises": [
+              {
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
+                "description": "Exercise description markdown"
+              }
+            ],
+            "feedback": [
+              {
+                "author": "User Name",
+                "content": "Feedback markdown"
+              }
+            ]
+          },
+          {
+            "title": "Episode 3 Title",
+            "abstract": "Episode abstract markdown",
+            "description": "Episode description markdown",
+            "concepts": [
+              {
+                "title": "Concept 1-1 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-2 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              },
+              {
+                "title": "Concept 1-3 Title",
+                "abstract": "Concept abstract markdown",
+                "description": "Concept description markdown"
+              }
+            ],
+            "steps": [
+              {
+                "title": "Step 1 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 2 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              },
+              {
+                "title": "Step 3 Title",
+                "abstract": "Step *abstract* markdown",
+                "description": "Step description markdown"
+              }
+            ],
+            "exercises": [
+              {
+                "title": "Exercise 1 Title",
+                "description": "Exercise description markdown"
+              },
+              {
+                "title": "Exercise 2 Title",
                 "description": "Exercise description markdown"
               }
             ],
@@ -57,4 +707,6 @@ const state = {
   user: null,
   isAuthenticated: false
 }
+
+
 export default state

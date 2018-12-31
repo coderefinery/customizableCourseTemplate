@@ -11,7 +11,7 @@
 </template>
 
 <script>
-	import vLesson from './vLesson'
+	import vLesson from './Lesson'
 
 	export default {
 	  name: 'vCourse',

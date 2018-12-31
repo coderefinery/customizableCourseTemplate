@@ -22,10 +22,9 @@
 </template>
 
 <script>
-  import vStep from './vStep';
-  import vQuiz from './vQuiz';
-  import vExercise from './vExercise';
-  import vMarkdownEditor from './vMarkdownEditor';
+  import vStep from './Step';
+  import vQuiz from './Quiz';
+  import vExercise from './Exercise';
 
   export default {
     name: "vEpisode",
@@ -37,7 +36,6 @@
       }
     },
     components: {
-      vMarkdownEditor,
       vStep,
       vQuiz,
       vExercise
@@ -45,4 +43,7 @@
   }
 </script>
 <style scoped>
+  .episode {
+    background-color: #edf2ff;
+  }
 </style>

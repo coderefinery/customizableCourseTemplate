@@ -2,7 +2,7 @@
 	<div class="header">
     <v-logo></v-logo>
     <h1 class="title">
-			CodeRefinery.org - {{ title }}
+			CodeRefinery.org - {{ title }} <button></button>
 		</h1>
 	</div>
 </template>

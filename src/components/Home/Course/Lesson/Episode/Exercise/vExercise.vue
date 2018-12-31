@@ -15,7 +15,6 @@
 </template>
 
 <script>
-  import vMarkdownEditor from './vMarkdownEditor';
 
   export default {
     name: "vExercise",
@@ -25,9 +24,6 @@
         type: Boolean,
         default: false
       }
-    },
-    components: {
-      vMarkdownEditor: vMarkdownEditor
     }
   }
 </script>

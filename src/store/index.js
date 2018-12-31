@@ -7,14 +7,13 @@ import state from './state'
 
 Vue.use(Vuex)
 
-const store = new Vuex.Store({
-  state,
-  getters,
-  mutations,
-  actions,
-  modules: {
-  
+const store = new Vuex.Store(
+  {
+    state,
+    getters,
+    mutations,
+    actions
   }
-})
+)
 
 export default store

@@ -33,6 +33,9 @@
         require('brace/ext/language_tools');
         require('brace/mode/' + this.language);
         require('brace/theme/chrome');
+        editor.on("change", function (e) {
+          console.log(e.data)
+        })
       }
     },
     components: {

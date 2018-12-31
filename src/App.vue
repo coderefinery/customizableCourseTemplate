@@ -11,11 +11,9 @@
           />
         </el-aside>
 				<el-container>
+          <v-breadcrumbs></v-breadcrumbs>
           <el-main :style="{'background-color': '#' + pageColor}">
-            <!-- todo: list courses component with alternative abstraction levels -->
-            <v-course
-              :course="course"
-            />
+            <router-view></router-view>
 						<!--div>
 							<el-button @click="notify">Notify Me!</el-button>
 						</div-->
@@ -32,17 +30,17 @@
 <script>
 	import vHeader from './vHeader'
 	import vAside from './vAside'
+	import vBreadcrumbs from './vBreadcrumbs'
 	import vFooter from './vFooter'
-	import vCourse from './vCourse'
 
 	export default {
 	  computed: {
-	    course () {
-	      return this.$store.state.course
-      },
-      pageColor () {
+	    pageColor () {
 	      console.log(this.$store.state.pageColor)
 	      return this.$store.state.pageColor
+      },
+      course: function () {
+        return this.$store.state.course
       }
     },
     methods: {
@@ -56,10 +54,10 @@
 			}
 		},
 		components: {
-			vFooter: vFooter,
 			vHeader,
 			vAside,
-      vCourse
+      vBreadcrumbs,
+			vFooter
 		}
 	}
 </script>
@@ -122,24 +120,13 @@
 	}
 
 	.el-main {
-		background-color: #E9EEF3;
 		color: #333;
 		text-align: left;
-		/*line-height: 16px;*/
 	}
 
 	body > .el-container {
 		margin-bottom: 40px;
     -webkit-font-smoothing: antialiased;
   }
-
-	.el-container:nth-child(5) .el-aside,
-	.el-container:nth-child(6) .el-aside {
-		line-height: 260px;
-	}
-
-	.el-container:nth-child(7) .el-aside {
-		line-height: 320px;
-	}
 
 </style>
