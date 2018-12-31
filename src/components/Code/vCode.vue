@@ -1,11 +1,9 @@
 <template>
   <v-ace
-    ref="ace"
     :lang="language"
     :theme="theme"
     v-model="content"
     width="100%"
-    height="100%"
     @init="editorInit"
   ></v-ace>
 </template>
@@ -13,10 +11,13 @@
 <script>
   import * as vACE from 'vue2-ace-editor';
 
-  // https://github.com/coderefinery/customizableCourseTemplate/issues/21
-
   export default {
     name: "vCode",
+    data: function () {
+      return {
+        veryHighNumber: 1333337
+      }
+    },
     props: {
       content: String,
       language: {
@@ -33,9 +34,13 @@
         require('brace/ext/language_tools');
         require('brace/mode/' + this.language);
         require('brace/theme/chrome');
+
+        editor.setOptions({
+          maxLines: this.veryHighNumber
+        })
         editor.on("change", function (e) {
           /*
-              handle changes:
+              handle content changes:
                 e.action // fx. insert
                 start .row, .column
                 end .row, .column
@@ -50,8 +55,5 @@
   }
 </script>
 <style scoped>
-  .ace_editor {
-    min-height: 1em;
-    padding: 1px;
-  }
+
 </style>
