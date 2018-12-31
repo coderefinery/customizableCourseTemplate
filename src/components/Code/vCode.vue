@@ -34,7 +34,13 @@
         require('brace/mode/' + this.language);
         require('brace/theme/chrome');
         editor.on("change", function (e) {
-          console.log(e.data)
+          /*
+              handle changes:
+                e.action // fx. insert
+                start .row, .column
+                end .row, .column
+                lines[]
+           */
         })
       }
     },
