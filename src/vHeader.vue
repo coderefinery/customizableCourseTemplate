@@ -2,7 +2,8 @@
 	<div class="header">
     <v-logo></v-logo>
     <h1 class="title">
-			CodeRefinery.org - {{ title }} <button></button>
+			CodeRefinery.org - {{ title }}
+      <el-checkbox v-model="contentIsEditable">Show Editors</el-checkbox>
 		</h1>
 	</div>
 </template>
@@ -15,7 +16,17 @@
     props: {
       title: {
         type: String,
-        default: 'Course Title'
+        default: 'Welcome'
+      }
+    },
+    computed: {
+		  contentIsEditable: {
+		    get () {
+  		    return this.$store.state.contentIsEditable
+        },
+        set (newValue) {
+		      return this.$store.dispatch('setContentIsEditable', newValue)
+        }
       }
     },
     components: {

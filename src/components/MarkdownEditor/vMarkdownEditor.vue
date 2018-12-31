@@ -4,7 +4,7 @@
     @click="highlight"
   >
     <v-code
-      v-if="readOnly === false"
+      v-if="contentIsEditable === true"
       language="markdown"
       :content="markdown"
     ></v-code>
@@ -28,6 +28,11 @@
       readOnly: {
         type: Boolean,
         default: false
+      }
+    },
+    computed: {
+      contentIsEditable: function () {
+        return this.$store.state.contentIsEditable
       }
     },
     methods: {

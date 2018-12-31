@@ -705,7 +705,8 @@ const state = {
     ]
   },
   user: null,
-  isAuthenticated: false
+  isAuthenticated: false,
+  contentIsEditable: false
 }
 
 
