@@ -12,8 +12,29 @@ The aim of this repository is to provide a flexible template the for code refine
 
 The layouts follow a successive abstraction from the course material. This course template implements the following structure:
 
+- workshop
+  - location
+  - time
+  - instructors
+  - helpers
+  - price
+  - registration
+  - contact
+  - formatDescription
+  - schedule
+    - day
+      - timeframe
+        - course
+
 - course
   - title
+  - description
+  - delimitation
+  - prerequisites
+    - installInstructions
+  - disclaimer
+  - goals
+  - targetAudience
   - abstract
   - description
   - lessons
@@ -23,9 +44,17 @@ The layouts follow a successive abstraction from the course material. This cours
     - episodes
   
 - episode
+  - courseParent
+  - title
+  - overview
+    - teachingDuration
+    - exerciseDuration
+  - description
+  - objectives
+  
+- objective
   - title
   - abstract
-  - description
   - concepts
     - title
     - abstract
